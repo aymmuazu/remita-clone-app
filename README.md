@@ -1,4 +1,4 @@
-# REMTIA - Empower your Customers to pay you easily as you grow
+# REMITA - Empower your Customers to pay you easily as you grow
  
 ## Description
 
