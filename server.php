@@ -1,10 +1,10 @@
 <?php
 
 $localhost = 'localhost';
-$user = 'root';
-$password = '';
+$user = 'remi_remita';
+$password = '.Abd37736578+';
 
-$database = 'remita';
+$database = 'remi_remita';
 
 $con = @mysqli_connect($localhost, $user, $password, $database);
 
