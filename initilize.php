@@ -77,10 +77,12 @@
                 
                 $rrr = $obj['RRR'];
 
-                $query = "INSERT INTO `pre-payments` values('', '".$name."', '".$email."', '".$phone."', '".$description."', '".$amount."','".$orderId."', '".$serviceTypeId."', '".$rrr."', '".$user_ip_address."', NOW(), NOW())";
+                $query = "INSERT INTO `payments` (`id`, `name`, `email`, `phone`, `description`, `amount`, `orderId`, `serviceTypeId`, `rrr`, `user_ip_address`, `created_at`, `updated_at`) 
+                                VALUES (NULL, '".$name."', '".$email."', '".$phone."', '".$description."', '".$amount."','".$orderId."', '".$serviceTypeId."', '".$rrr."', '".$user_ip_address."', NOW(), NOW())";
+                 
                 if ($query_run = mysqli_query($con, $query)) {
+
                     echo '<div class="alert alert-success">Payment Generated.</div>';
-                    echo '';
                 }else{
                     echo '<div class="alert alert-danger">Error occur please try again.</div>';
                 }

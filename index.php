@@ -42,7 +42,7 @@
         <tbody>
             <?php
                 require 'server.php';
-                $query = "SELECT * FROM `pre-payments`";
+                $query = "SELECT * FROM `payments`";
                 $query_run = mysqli_query($con, $query);
                 while ($query_row = mysqli_fetch_array($query_run)){
             ?>

@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.1.3
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Oct 01, 2021 at 08:03 AM
--- Server version: 10.4.20-MariaDB
--- PHP Version: 8.0.8
+-- Host: localhost
+-- Generation Time: Jun 04, 2022 at 04:04 PM
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 7.4.29
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,18 +24,18 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `pre-payments`
+-- Table structure for table `payments`
 --
 
-CREATE TABLE `pre-payments` (
+CREATE TABLE `payments` (
   `id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   `phone` varchar(255) NOT NULL,
   `description` varchar(255) NOT NULL,
-  `amount` int(255) NOT NULL,
-  `orderId` int(255) NOT NULL,
-  `serviceTypeId` int(255) NOT NULL,
+  `amount` varchar(255) NOT NULL,
+  `orderId` varchar(255) NOT NULL,
+  `serviceTypeId` varchar(255) NOT NULL,
   `rrr` varchar(255) NOT NULL,
   `user_ip_address` varchar(255) NOT NULL,
   `created_at` datetime NOT NULL,
@@ -47,9 +47,9 @@ CREATE TABLE `pre-payments` (
 --
 
 --
--- Indexes for table `pre-payments`
+-- Indexes for table `payments`
 --
-ALTER TABLE `pre-payments`
+ALTER TABLE `payments`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -57,9 +57,9 @@ ALTER TABLE `pre-payments`
 --
 
 --
--- AUTO_INCREMENT for table `pre-payments`
+-- AUTO_INCREMENT for table `payments`
 --
-ALTER TABLE `pre-payments`
+ALTER TABLE `payments`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
