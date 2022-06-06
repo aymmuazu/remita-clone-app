@@ -1,4 +1,4 @@
-<title>Pay  - Remita</title>
+<title> Pay  - Remita</title>
 <link rel="stylesheet" href="assets/bootstrap.css">
 <link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 <style>
