@@ -37,7 +37,7 @@
         <input name="merchantId" value="2547916" type="hidden"> 
         <input name="hash" value="<?php echo $hash?>" type="hidden"> 
         <input name="rrr" value="<?php echo $_GET['rrr'];?>" type="hidden"> 
-        <input name="responseurl" value="http://localhost/projects/remita-clone/response.php" type="hidden"> 
+        <input name="responseurl" value="<?php echo $_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'] ?>/response.php" type="hidden"> 
         <input type="submit"value="Pay Now Via Remita" class="btn btn-danger btn-lg">
     </form> 
     
