@@ -1,21 +1,9 @@
-<title>Initilize a Payment  - Remita</title>
-<link rel="stylesheet" href="assets/bootstrap.css">
-<link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-<style>
-    body{
-        font-family: 'Poppins', sans-serif;
-    }
-</style>
-<div class="container pt-5">
-    <div class="text-center">
-        <img src="assets/logo.png" alt="" style="width: 10%;">
-    </div>
-    
-    <h2 class="pt-5 text-center">All About It's PHP Programming Language API</h2>
-    <hr>
+<title>Initiate a Transaction - Remita-Clone App</title>
+<?php include('header.php') ?> 
 
+<div class="container pt-2">
+    <h3 class="pt-2 font-weight-bold text-center mb-2">Initiate a Transaction</h3>
     <?php
-
     require 'server.php';
 
         if(isset($_POST['name']) 
@@ -100,7 +88,6 @@
         }
 
     ?>
-
     <form action="initilize.php" method="POST" class="offset-md-3 col-md-6">
         <div class="row">
             <div class="col">
@@ -136,3 +123,5 @@
         
     </form>
 </div>
+
+<?php include('footer.php') ?> 

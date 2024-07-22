@@ -1,19 +1,9 @@
-<title> Pay  - Remita</title>
-<link rel="stylesheet" href="assets/bootstrap.css">
-<link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-<style>
-    body{
-        font-family: 'Poppins', sans-serif;
-    }
-</style>
-<div class="container pt-5">
-    <div class="text-center">
-        <img src="assets/logo.png" alt="" style="width: 10%;">
-    </div>
-    
-    <h2 class="pt-5 text-center">All About It's PHP Programming Language API</h2>
-    <hr>
+<title>Pay - Remita-Clone App</title>
+<?php include('header.php') ?> 
 
+<div class="container pt-2">
+
+    <h3 class="pt-2 font-weight-bold text-center mb-2">Verify and Pay</h3>
     <?php
     
         if(isset($_POST['rrr']))
@@ -57,7 +47,7 @@
                 elseif($status == '023'){
                     echo '<div class="alert alert-danger">Invalid RRR</div>';
                 }
-                elseif($status == '01'){
+                elseif($status == '00'){
                     echo '<div class="alert alert-success">RRR Already Paid.</div>';
                 }
                 else{
@@ -71,7 +61,6 @@
         }
 
     ?>
-
     <form action="pay.php" method="POST" class="offset-md-3 col-md-6">
         <label for="">Enter your RRR:</label>
         <input name="responseurl" value="http://localhost/php/remita/response.php" type="hidden"> 
@@ -84,7 +73,7 @@
             </div>
             <div class="col">
                 <div class="form-group">
-                    <button type="submit" class="btn btn-dark">Pay</button>
+                    <button type="submit" class="btn btn-danger">Verify and Pay</button>
                     <a href="index.php" class="btn btn-outline-primary">Home</a>
                 </div>
             </div>
@@ -92,3 +81,5 @@
         
     </form>
 </div>
+
+<?php include('footer.php') ?> 

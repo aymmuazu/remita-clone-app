@@ -4,7 +4,7 @@ $localhost = 'localhost';
 $user = 'root';
 $password = 'root';
 
-$database = 'remita_demo';
+$database = 'remita_clone';
 
 $con = @mysqli_connect($localhost, $user, $password, $database);
 
