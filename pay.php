@@ -1,4 +1,4 @@
-<title>Pay - Remita-Clone App</title>
+<title>Verify and Pay - Remita-Clone App</title>
 <?php include('header.php') ?> 
 
 <div class="container pt-2">

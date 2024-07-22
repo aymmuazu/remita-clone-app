@@ -34,7 +34,7 @@
             <tr>
                 <td><?php echo $query_row['id']?></td>
                 <td><?php echo $query_row['name']?></td>
-                <td><?php echo number_format($query_row['amount'],2)?></td>
+                <td class="font-weight-bold"><?php echo number_format($query_row['amount'],2)?></td>
                 <td><?php echo $query_row['rrr']?></td>
                 <td><a class="btn btn-danger btn-sm" href="del.php?rrr=<?php echo $query_row['rrr']?>">Delete</a></td>
             </tr>
