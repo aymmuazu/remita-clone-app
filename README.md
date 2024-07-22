@@ -1,4 +1,4 @@
-# REMITA - Empower your Customers to Pay You Easily as You Grow
+# REMITA - Clone App
 
 ![Remita Logo](https://remita.net/assets/minimal/images/remita_orange_new_logo.svg)
 
