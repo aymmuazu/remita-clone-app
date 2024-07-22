@@ -33,12 +33,17 @@
         $merchantId =  2547916;
         $hash = hash('sha512', $merchantId.''.$rrr.''.$apiKey);
     ?>
-    <form action="https://remitademo.net/remita/ecomm/finalize.reg" method="POST">
+    
+    <!--
+    <form action="https://remitademo.net/remita/ecomm/finalize.reg" method="GET">
         <input name="merchantId" value="2547916" type="hidden"> 
         <input name="hash" value="<?php echo $hash?>" type="hidden"> 
         <input name="rrr"  value="<?php echo $_GET['rrr'];?>" type="hidden"> 
-        <input name="responseurl" value="<?php echo $_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'] ?>/response.php" type="hidden"> 
-        <input type="submit"value="Pay Now Via Remita" class="btn btn-danger btn-lg">
+        <input name="responseurl" value="http://localhost:8001/response.php" type="hidden"> 
+        <input type="submit"value="Pay Now Via Remita" class="btn btn-danger btn-lg"> 
     </form> 
+    -->
+    
+    <a href="https://demo.remita.net/remita/onepage/biller/<?php echo $_GET['rrr'];?>/payment.spa" class="btn btn-danger btn-lg">Pay Now Via Remita</a>
     
 </div>

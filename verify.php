@@ -29,7 +29,7 @@
                 $curl = curl_init();
 
                 curl_setopt_array($curl, array(
-                CURLOPT_URL => 'http://www.remitademo.net/remita/ecomm/'.$merchantId.'/'.$rrr.'/'.$apiHash.'/status.reg',
+                CURLOPT_URL => 'https://demo.remita.net/remita/exapp/api/v1/send/api/echannelsvc/'.$merchantId.'/'.$rrr.'/'.$apiHash.'/status.reg',
                 CURLOPT_RETURNTRANSFER => true,
                 CURLOPT_ENCODING => '',
                 CURLOPT_MAXREDIRS => 10,

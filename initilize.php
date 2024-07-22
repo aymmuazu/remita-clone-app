@@ -30,7 +30,7 @@
             $phone = $_POST['phone'];
             $description = $_POST['description'];
             $amount = $_POST['amount'];
-            $baseUrl = 'https://remitademo.net/remita/exapp/api/v1/send/api';
+            $baseUrl = 'https://demo.remita.net/remita/exapp/api/v1/send/api';
             $merchantId = 2547916;
             $apiKey = 1946;
             $serviceTypeId = 4430731;
